@@ -1,4 +1,19 @@
-# React + Vite
+**Frontend Portfolio**
+
+**I18n And Accessibility Rules**
+
+- All user-facing text must come from i18n files (`src/i18n/fr.json` now, `src/i18n/en.json` later).
+- This includes text read by assistive technologies: `alt`, `aria-label`, `aria-describedby`, button labels, form labels, and placeholders.
+- No partial translation: if a list exists in one language, the same list exists in the other language, even for technical terms.
+- Allowed exception only when explicitly validated: fixed proper names that never change (example: the site owner’s name).
+- Prefer semantic HTML first; use ARIA only when semantics are not enough.
+- Do not add `aria-label` to elements that already have visible text; it must match the visible text if used.
+- Use a meaningful `alt` for informative images.
+- Use empty `alt` (`alt=''`) for decorative images.
+- Keep `alt` content consistent with the i18n rules above.
+
+**Template Notes**
+**React + Vite**
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

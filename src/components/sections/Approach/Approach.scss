@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+ .approach {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.approach__header {
+    margin-bottom: 0.5rem;
+}
+
+.approach__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.approach__icon {
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.approach__icon-img {
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+}

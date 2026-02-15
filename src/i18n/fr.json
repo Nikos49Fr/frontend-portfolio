@@ -1,0 +1,167 @@
+﻿{
+    "nav": {
+        "items": [
+            "Accueil",
+            "A propos",
+            "Mes réalisations",
+            "Skills",
+            "Contact"
+        ],
+        "langToggle": "FR|EN",
+        "themeToggle": "Clair|Sombre"
+    },
+    "hero": {
+        "name": "Nicolas Grignard",
+        "title": "Développeur front-end",
+        "intro": [
+            "Je développe des interfaces web claires et accessibles, répondant à des besoins concrets.",
+            "J'accorde une attention particulière à la lisibilité et à la maintenabilité du code."
+        ]
+    },
+    "approach": {
+        "title": "Mon approche",
+        "paragraphs": [
+            "Je développe des interfaces en partant avant tout du besoin à résoudre. J'avance par étapes, en cherchant à comprendre la logique du projet, ses contraintes et ses usages, avant de faire des choix techniques.",
+            "Mon approche évolue avec les projets. J'explore, j'ajuste, et je m'attache à produire un code lisible, structuré et maintenable, pensé pour durer."
+        ]
+    },
+    "projects": {
+        "title": "Mes réalisations",
+        "intro": "Une sélection de projets réalisés dans un cadre de formation et en dehors, classés par thématiques.\nChaque catégorie regroupe plusieurs travaux illustrant des problématiques concrètes, des choix techniques et une progression dans ma pratique.",
+        "categories": {
+            "html-css": {
+                "title": "HTML - CSS",
+                "description": "Intégration d’interfaces responsives à partir de maquettes, avec une attention portée à la structure, au rendu visuel et à l’accessibilité.",
+                "alt": "Vignette de la catégorie HTML - CSS",
+                "projects": ["ohmyfood", "booki"]
+            },
+            "javascript": {
+                "title": "JavaScript",
+                "description": "Pages web dynamiques, manipulation du DOM, gestion des interactions utilisateurs et communication avec des API.",
+                "alt": "Vignette de la catégorie JavaScript",
+                "projects": ["sophie-bluel"]
+            },
+            "react": {
+                "title": "React",
+                "description": "Applications front-end structurées en composants, gestion des états, routing et organisation du code à l’échelle d’une application.",
+                "alt": "Vignette de la catégorie React",
+                "projects": ["kasa", "argent-bank"]
+            },
+            "optimization": {
+                "title": "Gestion de projet & optimisation",
+                "description": "Analyse de besoins, planification, débogage, amélioration des performances, accessibilité et qualité globale du code.",
+                "alt": "Vignette de la catégorie Gestion de projet & optimisation",
+                "projects": ["menu-maker-qwenta", "724events", "nina-carducci"]
+            },
+            "personal": {
+                "title": "Projets personnels",
+                "description": "Projets développés en dehors du cadre de la formation, souvent plus expérimentaux, mêlant technique, contraintes réelles et usage concret.",
+                "alt": "Vignette de la catégorie Projets personnels",
+                "projects": ["mk-gp-experience"]
+            }
+        },
+        "cards": {
+            "ohmyfood": {
+                "title": "Ohmyfood",
+                "description": [
+                    "Intégration complète d’un site vitrine à partir de maquettes fournies.",
+                    "Le projet met l’accent sur la structuration du HTML, l’utilisation de Sass, les animations CSS et l’adaptation à différents formats d’écran.",
+                    "Ce travail m’a permis de consolider de bonnes pratiques d’intégration et d’améliorer la lisibilité du code sur un projet de taille intermédiaire."
+                ],
+                "tags": ["Intégration", "Responsive", "Animations CSS", "Sass"]
+            },
+            "booki": {
+                "title": "Booki",
+                "description": [
+                    "Intégration d’une page web responsive à partir d’une maquette desktop, avec adaptation tablette et mobile.",
+                    "Le projet repose sur une structure HTML sémantique claire et l’utilisation de Flexbox pour la mise en page.",
+                    "Il constitue une base solide pour comprendre les contraintes du responsive design et l’organisation d’une interface simple mais complète."
+                ],
+                "tags": ["HTML sémantique", "CSS", "Responsive", "Flexbox"]
+            },
+            "sophie-bluel": {
+                "title": "Sophie Bluel - Architecte d'intérieur",
+                "description": [
+                    "Développement d'une interface web dynamique en JavaScript natif.",
+                    "Le projet repose sur la manipulation du DOM, la gestion des interactions utilisateurs et la communication avec une API pour afficher et modifier des données.",
+                    "Il m'a permis de structurer une logique applicative côté front et de mieux comprendre la gestion d'un état dynamique sans framework."
+                ],
+                "tags": ["DOM", "API", "Gestion des événements"]
+            },
+            "kasa": {
+                "title": "Kasa",
+                "description": [
+                    "Développement d'une application front-end avec React à partir de maquettes et de données fournies.",
+                    "Le projet met en œuvre une architecture par composants, la gestion des états, le routing et l'organisation du code à l'échelle d'une application complète.",
+                    "Il marque un changement d'échelle dans ma manière de structurer une application et de penser sa maintenabilité."
+                ],
+                "tags": ["Composants", "State", "Routing"]
+            },
+            "argent-bank": {
+                "title": "Argent Bank",
+                "description": [
+                    "Développement d'une application front-end bancaire avec React et Redux.",
+                    "Mise en place d'une gestion globale de l'état, sécurisation des accès et communication avec une API.",
+                    "Ce projet m'a permis de comprendre les enjeux de centralisation des données et de structuration d'une application plus complexe."
+                ],
+                "tags": ["Redux", "State global", "Routes API"]
+            },
+            "menu-maker-qwenta": {
+                "title": "Menu Maker by Qwenta",
+                "description": [
+                    "Projet centré sur la phase amont d'un développement web.",
+                    "Analyse du besoin client, rédaction de spécifications techniques, organisation du travail via un Kanban et priorisation des tâches.",
+                    "Il m'a permis d'aborder les enjeux de cadrage et de gestion de projet avant la phase de développement."
+                ],
+                "tags": ["Gestion de projet", "Spécifications", "Kanban", "Veille techno"]
+            },
+            "724events": {
+                "title": "724Events",
+                "description": [
+                    "Analyse et correction de dysfonctionnements sur un site événementiel existant.",
+                    "Le travail a porté sur l'identification des bugs, l'amélioration des performances, l'accessibilité et la correction de problèmes SEO.",
+                    "Ce projet m'a appris à intervenir sur un code existant avec méthode et rigueur, sans réécrire inutilement."
+                ],
+                "tags": ["React", "Debug", "jtesting"]
+            },
+            "nina-carducci": {
+                "title": "Nina Carducci - Photographe",
+                "description": [
+                    "Optimisation d'un site web existant orientée performance et référencement.",
+                    "Le travail a porté sur l'amélioration du SEO, l'optimisation des images, la performance globale et l'accessibilité.",
+                    "Ce projet m'a permis de comprendre l'impact concret des optimisations techniques sur la visibilité et l'expérience utilisateur."
+                ],
+                "tags": ["SEO", "Performance", "Accessibilité", "Optimisation"]
+            },
+            "mk-gp-experience": {
+                "title": "MK GP Experience",
+                "description": [
+                    "Application web développée pour accompagner un événement en live sur Twitch.",
+                    "Interface dynamique, gestion de données en temps réel, overlays pour le stream et logique applicative complexe côté front.",
+                    "Projet expérimental, conçu pour un usage réel avec des contraintes concrètes."
+                ],
+                "tags": ["JS Vanilla", "UI dynamique", "Firebase", "Real time DB", "clé API"]
+            }
+        },
+        "codeSourceLabel": "Code source"
+    },
+    "skills": {
+        "title": "Skills"
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Une question, une proposition ou une collaboration ?\nJe vous répondrai rapidement.",
+        "form": {
+            "subjectLabel": "Sujet",
+            "subjectPlaceholder": "Votre besoin",
+            "emailLabel": "Adresse email",
+            "emailPlaceholder": "Votre email",
+            "messageLabel": "Message",
+            "messagePlaceholder": "N'hésitez pas à détailler librement votre demande",
+            "submitLabel": "Envoyer",
+            "consentLabel": "J'accepte d'être recontacté concernant ma demande"
+        },
+        "followTitle": "Me suivre",
+        "submitSuccess": "Votre message a bien été envoyé"
+    }
+}

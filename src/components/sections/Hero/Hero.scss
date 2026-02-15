@@ -1,0 +1,27 @@
+#hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+#hero > header {
+    flex: 1 1 0;
+}
+
+#hero > figure {
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+#hero img {
+    width: 240px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}

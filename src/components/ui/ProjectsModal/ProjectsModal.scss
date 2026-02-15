@@ -1,0 +1,164 @@
+﻿@use '../../../styles/variables' as *;
+
+.projects__modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba($color-bg, 0.85);
+}
+
+.projects__modal-content {
+    background: $color-bg-alt;
+    border: 1px solid $color-border;
+    border-radius: 16px;
+    padding: 2rem;
+    width: min(960px, 90vw);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__modal-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projects__modal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.projects__modal-chevron-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-color: $color-text;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.projects__modal-heading {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+.projects__modal-title {
+    margin: 0;
+}
+
+.projects__modal-close {
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.projects__modal-close-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-color: $color-text;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.projects__modal-body {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.projects__project-card {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.projects__project-media {
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.projects__project-image {
+    display: block;
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projects__project-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    gap: 0.75rem;
+}
+
+.projects__project-title {
+    margin: 0 0 0.25rem;
+    font-size: 1.125rem;;
+}
+
+.projects__project-description {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.projects__project-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.projects__project-tags {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.projects__project-tag {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid $color-border;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+.projects__project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.projects__project-link-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: $color-text;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
