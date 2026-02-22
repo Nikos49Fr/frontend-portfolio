@@ -1,5 +1,6 @@
 ﻿import './ProjectCard.scss';
 import githubIcon from '../../../assets/icons/github-brands-solid-full.svg';
+import { resolveJsonAsset } from '../../../utils/assetResolver';
 
 const getIconStyle = (icon) => ({
     maskImage: `url("${icon}")`,
@@ -13,7 +14,7 @@ export default function ProjectCard({ project, projectText, codeSourceLabel }) {
 
     const tags = projectText.tags ?? [];
     const paragraphs = projectText.description ?? [];
-    const imageSrc = project.image ?? '';
+    const imageSrc = resolveJsonAsset(project.image);
 
     return (
         <article className="projects__project-card">

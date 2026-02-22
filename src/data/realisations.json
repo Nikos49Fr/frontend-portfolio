@@ -1,7 +1,7 @@
-﻿{
+{
     "html-css": {
-        "image": "/src/assets/images/projects/ohmyfood_large_thumb.webp",
-        "icon": "/src/assets/icons/code-solid-full.svg",
+        "image": "src/assets/images/projects/ohmyfood_large_thumb.webp",
+        "icon": "src/assets/icons/code-solid-full.svg",
         "iconClass": "html-css",
         "projects": [
             "ohmyfood",
@@ -9,16 +9,16 @@
         ]
     },
     "javascript": {
-        "image": "/src/assets/images/projects/sophiebluel_large_thumb.webp",
-        "icon": "/src/assets/icons/js-brands-solid-full.svg",
+        "image": "src/assets/images/projects/sophiebluel_large_thumb.webp",
+        "icon": "src/assets/icons/js-brands-solid-full.svg",
         "iconClass": "javascript",
         "projects": [
             "sophie-bluel"
         ]
     },
     "react": {
-        "image": "/src/assets/images/projects/kasa_large_thumb.webp",
-        "icon": "/src/assets/icons/react-brands-solid-full.svg",
+        "image": "src/assets/images/projects/kasa_large_thumb.webp",
+        "icon": "src/assets/icons/react-brands-solid-full.svg",
         "iconClass": "react",
         "projects": [
             "kasa",
@@ -26,8 +26,8 @@
         ]
     },
     "optimization": {
-        "image": "/src/assets/images/projects/724events_large_thumb.webp",
-        "icon": "/src/assets/icons/gear-solid-full.svg",
+        "image": "src/assets/images/projects/724events_large_thumb.webp",
+        "icon": "src/assets/icons/gear-solid-full.svg",
         "iconClass": "optimization",
         "projects": [
             "menu-maker-qwenta",
@@ -36,8 +36,8 @@
         ]
     },
     "personal": {
-        "image": "/src/assets/images/projects/MKExperience_large_thumb.webp",
-        "icon": "/src/assets/icons/dice-solid-full.svg",
+        "image": "src/assets/images/projects/MKExperience_large_thumb.webp",
+        "icon": "src/assets/icons/dice-solid-full.svg",
         "iconClass": "personal",
         "projects": [
             "mk-gp-experience"

@@ -5,6 +5,7 @@ import realisations from '../../../data/realisations.json';
 import projects from '../../../data/projects.json';
 import ProjectCategoryCard from '../../ui/ProjectCategoryCard/ProjectCategoryCard';
 import ProjectsModal from '../../ui/ProjectsModal/ProjectsModal';
+import { resolveJsonAsset } from '../../../utils/assetResolver';
 
 export default function Projects() {
     const { content } = useLanguage();
@@ -19,8 +20,8 @@ export default function Projects() {
             title: categoryContent.title ?? '',
             description: categoryContent.description ?? '',
             alt: categoryContent.alt ?? '',
-            image: item.image,
-            icon: item.icon,
+            image: resolveJsonAsset(item.image),
+            icon: resolveJsonAsset(item.icon),
             iconClass: item.iconClass,
             projects: item.projects ?? [],
         };

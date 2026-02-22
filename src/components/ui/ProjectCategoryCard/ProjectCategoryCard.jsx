@@ -6,7 +6,8 @@ export default function ProjectCategoryCard({ category, onOpen }) {
     };
 
     const iconStyle = {
-        maskImage: `url(${category.icon})`,
+        maskImage: `url("${category.icon}")`,
+        WebkitMaskImage: `url("${category.icon}")`,
     };
 
     return (

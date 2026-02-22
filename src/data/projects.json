@@ -1,46 +1,46 @@
-﻿{
+{
     "ohmyfood": {
-        "image": "/src/assets/images/projects/ohmyfood_thumb.webp",
+        "image": "src/assets/images/projects/ohmyfood_thumb.webp",
         "repoUrl": "https://github.com/Nikos49Fr/ohmyfood-main",
         "category": "html-css"
     },
     "booki": {
-        "image": "/src/assets/images/projects/booki_thumb.webp",
+        "image": "src/assets/images/projects/booki_thumb.webp",
         "repoUrl": "https://github.com/Nikos49Fr/booki-starter-code-master",
         "category": "html-css"
     },
     "sophie-bluel": {
-        "image": "/src/assets/images/projects/sophiebluel_thumb.webp",
+        "image": "src/assets/images/projects/sophiebluel_thumb.webp",
         "repoUrl": "https://github.com/Nikos49Fr/Portfolio-architecte-sophie-bluel-master",
         "category": "javascript"
     },
     "kasa": {
-        "image": "/src/assets/images/projects/kasa_thumb.webp",
+        "image": "src/assets/images/projects/kasa_thumb.webp",
         "repoUrl": "https://github.com/Nikos49Fr/kasa",
         "category": "react"
     },
     "argent-bank": {
-        "image": "/src/assets/images/projects/argentbank_thumb.webp",
+        "image": "src/assets/images/projects/argentbank_thumb.webp",
         "repoUrl": "https://github.com/Nikos49Fr/argent-bank",
         "category": "react"
     },
     "menu-maker-qwenta": {
-        "image": "/src/assets/images/projects/qwenta_thumb.webp",
+        "image": "src/assets/images/projects/qwenta_thumb.webp",
         "repoUrl": "",
         "category": "optimization"
     },
     "724events": {
-        "image": "/src/assets/images/projects/724events_thumb.webp",
+        "image": "src/assets/images/projects/724events_thumb.webp",
         "repoUrl": "https://github.com/Nikos49Fr/Debuggez-une-application-React",
         "category": "optimization"
     },
     "nina-carducci": {
-        "image": "/src/assets/images/projects/ninacarducci_thumb.webp",
+        "image": "src/assets/images/projects/ninacarducci_thumb.webp",
         "repoUrl": "https://github.com/Nikos49Fr/ninacarducci",
         "category": "optimization"
     },
     "mk-gp-experience": {
-        "image": "/src/assets/images/projects/MKExperience_thumb.webp",
+        "image": "src/assets/images/projects/MKExperience_thumb.webp",
         "repoUrl": "https://github.com/Nikos49Fr/MK-GP-Experience-3",
         "category": "personal"
     }

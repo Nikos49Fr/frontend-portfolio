@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import './Contact.scss';
 import { useLanguage } from '../../../context/LanguageContext';
 import socialLinks from '../../../data/socialLinks.json';
+import { resolveJsonAsset } from '../../../utils/assetResolver';
 
 import paperPlaneIcon from '../../../assets/icons/paper-plane-solid-full.svg';
 import closeIcon from '../../../assets/icons/xmark-solid-full.svg';
@@ -289,7 +290,7 @@ export default function Contact() {
                     </h3>
                     <ul className="contact__follow-list">
                         {visibleFollowItems.map((item) => {
-                            const icon = item.icon;
+                            const icon = resolveJsonAsset(item.icon);
                             return (
                                 <li
                                     className="contact__follow-item"
