@@ -1,4 +1,8 @@
 {
+    "seo": {
+        "title": "Nicolas Grignard | Front-end developer",
+        "description": "Portfolio of Nicolas Grignard, front-end developer. Projects, skills, approach, and contact."
+    },
     "nav": {
         "items": [
             "Home",
@@ -6,8 +10,7 @@
             "Projects",
             "Skills",
             "Contact"
-        ],
-        "langToggle": "EN|FR"
+        ]
     },
     "hero": {
         "name": "Nicolas Grignard",
@@ -214,6 +217,7 @@
             "subjectPlaceholder": "Your need",
             "emailLabel": "Email address",
             "emailPlaceholder": "Your email",
+            "emailInvalid": "Invalid email",
             "messageLabel": "Message",
             "messagePlaceholder": "Feel free to describe your request in detail",
             "submitLabel": "Send",

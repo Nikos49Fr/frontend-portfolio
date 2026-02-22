@@ -20,6 +20,11 @@
             box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
             background: #222c35;
         }
+
+        &:focus-visible .skills__card-door {
+            outline: 2px solid $color-accent;
+            outline-offset: -2px;
+        }
     }
 
     &-content {

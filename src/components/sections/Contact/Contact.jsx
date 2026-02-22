@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { useRef } from 'react';
 import './Contact.scss';
 import { useLanguage } from '../../../context/LanguageContext';
 import socialLinks from '../../../data/socialLinks.json';
@@ -21,6 +22,9 @@ export default function Contact() {
     const [formState, setFormState] = useState(initialFormState);
     const [honeypot, setHoneypot] = useState('');
     const [showSuccess, setShowSuccess] = useState(false);
+    const [emailErrorVisible, setEmailErrorVisible] = useState(false);
+    const subjectInputRef = useRef(null);
+    const successCloseRef = useRef(null);
 
     const handleChange = (event) => {
         const { name, value, type, checked, dataset } = event.target;
@@ -30,6 +34,9 @@ export default function Contact() {
             ...prev,
             [fieldName]: nextValue,
         }));
+        if (fieldName === 'email') {
+            setEmailErrorVisible(false);
+        }
     };
 
     const handleBlur = (event) => {
@@ -41,6 +48,19 @@ export default function Contact() {
             ...prev,
             [name]: value.trim(),
         }));
+    };
+    const handleEmailBlur = (event) => {
+        const { value } = event.target;
+        const trimmed = value.trim();
+        setFormState((prev) => ({
+            ...prev,
+            email: trimmed,
+        }));
+        if (!trimmed) {
+            setEmailErrorVisible(false);
+            return;
+        }
+        setEmailErrorVisible(!emailRegex.test(trimmed));
     };
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -83,8 +103,14 @@ export default function Contact() {
             return;
         }
         document.body.classList.add('modal-open');
+        if (successCloseRef.current) {
+            successCloseRef.current.focus();
+        }
         return () => {
             document.body.classList.remove('modal-open');
+            if (subjectInputRef.current) {
+                subjectInputRef.current.focus();
+            }
         };
     }, [showSuccess]);
 
@@ -107,9 +133,10 @@ export default function Contact() {
                 onSubmit={handleSubmit}
             >
                 <iframe
-                    title="contact-form-target"
                     name="contact-form-target"
                     className="contact__honeypot"
+                    tabIndex="-1"
+                    aria-hidden="true"
                 />
                 <div className="contact__honeypot" aria-hidden="true">
                     <label htmlFor="contact-website">Website</label>
@@ -139,12 +166,23 @@ export default function Contact() {
                         value={formState.subject}
                         onChange={handleChange}
                         onBlur={handleBlur}
+                        ref={subjectInputRef}
                     />
                 </div>
                 <div className="contact__field">
-                    <label className="contact__label" htmlFor="contact-email">
-                        {content.contact.form.emailLabel}
-                        <span className="required-input">*</span>
+                    <label
+                        className="contact__label contact__label--with-error"
+                        htmlFor="contact-email"
+                    >
+                        <span className="contact__label-text">
+                            {content.contact.form.emailLabel}
+                            <span className="required-input">*</span>
+                        </span>
+                        {emailErrorVisible ? (
+                            <span className="contact__error">
+                                {content.contact.form.emailInvalid}
+                            </span>
+                        ) : null}
                     </label>
                     <input
                         className="contact__input"
@@ -156,6 +194,7 @@ export default function Contact() {
                         required
                         value={formState.email}
                         onChange={handleChange}
+                        onBlur={handleEmailBlur}
                     />
                 </div>
                 <div className="contact__field">
@@ -220,6 +259,7 @@ export default function Contact() {
                             type="button"
                             className="contact__success-close"
                             onClick={handleCloseSuccess}
+                            ref={successCloseRef}
                         >
                             <span
                                 className="contact__success-close-icon"

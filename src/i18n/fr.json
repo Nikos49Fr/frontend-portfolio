@@ -1,4 +1,8 @@
-﻿{
+{
+    "seo": {
+        "title": "Nicolas Grignard | Développeur front-end",
+        "description": "Portfolio de Nicolas Grignard, développeur front-end. Projets, compétences, approche et contact."
+    },
     "nav": {
         "items": [
             "Accueil",
@@ -6,8 +10,7 @@
             "Mes réalisations",
             "Skills",
             "Contact"
-        ],
-        "langToggle": "FR|EN"
+        ]
     },
     "hero": {
         "name": "Nicolas Grignard",
@@ -214,12 +217,13 @@
             "subjectPlaceholder": "Votre besoin",
             "emailLabel": "Adresse email",
             "emailPlaceholder": "Votre email",
+            "emailInvalid": "Email invalide",
             "messageLabel": "Message",
             "messagePlaceholder": "N'hésitez pas à détailler librement votre demande",
             "submitLabel": "Envoyer",
             "consentLabel": "J'accepte d'être recontacté concernant ma demande"
         },
-        "submitSuccess": "Votre message a bien été envoyé",
-        "followTitle": "Me suivre"
+        "followTitle": "Me suivre",
+        "submitSuccess": "Votre message a bien été envoyé"
     }
 }

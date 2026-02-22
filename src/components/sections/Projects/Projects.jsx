@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useRef, useState } from 'react';
 import './Projects.scss';
 import { useLanguage } from '../../../context/LanguageContext';
 import realisations from '../../../data/realisations.json';
@@ -10,6 +10,7 @@ export default function Projects() {
     const { content } = useLanguage();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [activeCategoryId, setActiveCategoryId] = useState(null);
+    const lastFocusedRef = useRef(null);
 
     const categories = Object.entries(realisations).map(([id, item]) => {
         const categoryContent = content.projects.categories[id] ?? {};
@@ -28,6 +29,7 @@ export default function Projects() {
     const categoryIds = categories.map((category) => category.id);
 
     const handleOpen = (categoryId) => {
+        lastFocusedRef.current = document.activeElement;
         setActiveCategoryId(categoryId);
         setIsModalOpen(true);
     };
@@ -92,6 +94,7 @@ export default function Projects() {
                 onClose={handleClose}
                 onPrev={handlePrev}
                 onNext={handleNext}
+                returnFocusRef={lastFocusedRef}
             />
         </section>
     );

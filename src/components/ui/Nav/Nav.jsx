@@ -59,6 +59,7 @@ export default function Nav() {
                             <label
                                 className={`app__nav-lang-toggle app__nav-lang-toggle--${lang}`}
                             >
+                                <span className='sr-only'>Langue</span>
                                 <input
                                     className='app__nav-lang-input'
                                     type='checkbox'

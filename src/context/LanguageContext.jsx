@@ -18,6 +18,43 @@ export function LanguageProvider({ children }) {
         localStorage.setItem(STORAGE_KEY, lang);
     }, [lang]);
 
+    useEffect(() => {
+        if (content.seo?.title) {
+            document.title = content.seo.title;
+        }
+    }, [content]);
+
+    useEffect(() => {
+        if (!content.seo?.description) {
+            return;
+        }
+        const meta = document.querySelector('meta[name="description"]');
+        if (meta) {
+            meta.setAttribute('content', content.seo.description);
+        }
+    }, [content]);
+
+    useEffect(() => {
+        document.documentElement.lang = lang;
+    }, [lang]);
+
+    useEffect(() => {
+        if (!content.seo) {
+            return;
+        }
+        const setMeta = (selector, value) => {
+            const meta = document.querySelector(selector);
+            if (meta && value) {
+                meta.setAttribute('content', value);
+            }
+        };
+
+        setMeta('meta[property="og:title"]', content.seo.title);
+        setMeta('meta[property="og:description"]', content.seo.description);
+        setMeta('meta[name="twitter:title"]', content.seo.title);
+        setMeta('meta[name="twitter:description"]', content.seo.description);
+    }, [content]);
+
     return (
         <LanguageContext.Provider value={{ lang, setLang, content }}>
             {children}

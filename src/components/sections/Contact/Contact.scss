@@ -38,6 +38,24 @@
         gap: 0.5rem;
     }
 
+    &__label--with-error {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+    }
+
+    &__label-text {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__error {
+        color: #ff4d4d;
+        font-size: 0.75rem;
+        font-style: italic;
+    }
+
     &__input,
     &__textarea {
         background: $color-bg-alt;
