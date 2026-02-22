@@ -4,20 +4,21 @@ import Contact from './components/sections/Contact/Contact';
 import Hero from './components/sections/Hero/Hero';
 import Projects from './components/sections/Projects/Projects';
 import Skills from './components/sections/Skills/Skills';
+import { LanguageProvider } from './context/LanguageContext';
 
-function App() {
+export default function App() {
     return (
-        <div className='app'>
-            <Nav />
-            <main className='app__main'>
-                <Hero />
-                <Approach />
-                <Projects />
-                <Skills />
-                <Contact />
-            </main>
-        </div>
+        <LanguageProvider>
+            <div className='app'>
+                <Nav />
+                <main className='app__main'>
+                    <Hero />
+                    <Approach />
+                    <Projects />
+                    <Skills />
+                    <Contact />
+                </main>
+            </div>
+        </LanguageProvider>
     );
 }
-
-export default App;

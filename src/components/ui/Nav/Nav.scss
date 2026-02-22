@@ -1,26 +1,104 @@
 @use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
 
 .app__nav {
-    max-width: 1024px;
-    margin: 0 auto;
-    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background: $color-bg;
+    z-index: 100;
+    background: $color-bg-alt;
     border-bottom: 1px solid $color-border;
-}
+    padding: 0.75rem 1.5rem;
+    
+    &-inner {
+        max-width: 1024px;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+    
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    &-link {
+        padding: 0.35rem 0.5rem;
+        border-radius: 8px;
 
-.app__nav-button {
-    background: none;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
+        @include hover-accent;
+    }
+    
+    &-lang {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &-toggle {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+
+            &--fr .app__nav-lang-thumb {
+                background-image: url('/src/assets/icons/Flag_of_France.webp');
+            }
+
+            &--en .app__nav-lang-thumb {
+                background-image: url('/src/assets/icons/Flag_of_the_United_Kingdom.webp');
+            }
+        }
+
+        &-label {
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            border: 0;
+            padding: 0;
+            background: none;
+            cursor: pointer;
+
+            @include hover-accent;
+        }
+
+        &-input {
+            position: absolute;
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+
+            &:checked + .app__nav-lang-track .app__nav-lang-thumb {
+                transform: translateX(20px);
+            }
+        }
+
+        &-track {
+            width: 44px;
+            height: 22px;
+            border-radius: 999px;
+            background: $color-bg-alt;
+            border: 1px solid $color-border;
+            display: inline-flex;
+            align-items: center;
+            padding: 2px;
+            transition: background-color 150ms ease, border-color 150ms ease;
+        }
+
+        &-thumb {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            transform: translateX(0);
+            transition: transform 150ms ease;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

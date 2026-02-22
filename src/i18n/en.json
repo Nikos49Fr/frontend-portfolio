@@ -1,0 +1,225 @@
+{
+    "nav": {
+        "items": [
+            "Home",
+            "About",
+            "Projects",
+            "Skills",
+            "Contact"
+        ],
+        "langToggle": "EN|FR"
+    },
+    "hero": {
+        "name": "Nicolas Grignard",
+        "title": "Front-end developer",
+        "intro": [
+            "I build clear, accessible web interfaces that solve real needs.",
+            "I pay close attention to readability and long-term maintainability."
+        ]
+    },
+    "approach": {
+        "title": "My approach",
+        "paragraphs": [
+            "I build interfaces by starting with the problem to solve. I move step by step, aiming to understand the project's logic, constraints, and use cases before making technical choices.",
+            "My approach evolves with each project. I explore, iterate, and focus on producing readable, structured, maintainable code designed to last."
+        ]
+    },
+    "projects": {
+        "title": "My projects",
+        "intro": [
+            "A selection of projects completed during training and beyond, grouped by theme.",
+            "Each category gathers work that reflects real-world problems, technical choices, and progression in my practice."
+        ],
+        "categories": {
+            "html-css": {
+                "title": "HTML - CSS",
+                "description": "Building responsive interfaces from mockups, with attention to structure, visual accuracy, and accessibility.",
+                "alt": "Thumbnail for the HTML - CSS category",
+                "projects": ["ohmyfood", "booki"]
+            },
+            "javascript": {
+                "title": "JavaScript",
+                "description": "Dynamic web pages, DOM manipulation, user interactions, and communication with APIs.",
+                "alt": "Thumbnail for the JavaScript category",
+                "projects": ["sophie-bluel"]
+            },
+            "react": {
+                "title": "React",
+                "description": "Front-end apps structured with components, state management, routing, and scalable code organization.",
+                "alt": "Thumbnail for the React category",
+                "projects": ["kasa", "argent-bank"]
+            },
+            "optimization": {
+                "title": "Project management & optimization",
+                "description": "Needs analysis, planning, debugging, performance improvements, accessibility, and overall code quality.",
+                "alt": "Thumbnail for the Project management & optimization category",
+                "projects": ["menu-maker-qwenta", "724events", "nina-carducci"]
+            },
+            "personal": {
+                "title": "Personal projects",
+                "description": "Projects outside the training scope, often more experimental, mixing technical challenges, real constraints, and practical usage.",
+                "alt": "Thumbnail for the Personal projects category",
+                "projects": ["mk-gp-experience"]
+            }
+        },
+        "cards": {
+            "ohmyfood": {
+                "title": "Ohmyfood",
+                "description": [
+                    "Full integration of a showcase site from provided mockups.",
+                    "The project focuses on HTML structure, Sass usage, CSS animations, and adaptation to different screen sizes.",
+                    "It helped me reinforce solid integration practices and improve code readability on a mid-sized project."
+                ],
+                "tags": ["Integration", "Responsive", "CSS animations", "Sass"]
+            },
+            "booki": {
+                "title": "Booki",
+                "description": [
+                    "Integration of a responsive web page from a desktop mockup, with tablet and mobile adaptation.",
+                    "The project relies on a clear semantic HTML structure and Flexbox for layout.",
+                    "It provides a solid base for understanding responsive constraints and organizing a simple yet complete interface."
+                ],
+                "tags": ["Semantic HTML", "CSS", "Responsive", "Flexbox"]
+            },
+            "sophie-bluel": {
+                "title": "Sophie Bluel - Interior Designer",
+                "description": [
+                    "Development of a dynamic web interface in vanilla JavaScript.",
+                    "The project focuses on DOM manipulation, user interaction handling, and API communication to display and update data.",
+                    "It helped me structure front-end logic and better understand state management without a framework."
+                ],
+                "tags": ["DOM", "API", "Event handling"]
+            },
+            "kasa": {
+                "title": "Kasa",
+                "description": [
+                    "Development of a React front-end application based on mockups and provided data.",
+                    "The project implements component architecture, state management, routing, and code organization at app scale.",
+                    "It marks a step change in how I structure applications and think about maintainability."
+                ],
+                "tags": ["Components", "State", "Routing"]
+            },
+            "argent-bank": {
+                "title": "Argent Bank",
+                "description": [
+                    "Development of a front-end banking app with React and Redux.",
+                    "Global state management, access security, and API communication.",
+                    "This project helped me understand data centralization challenges and structuring a more complex application."
+                ],
+                "tags": ["Redux", "Global state", "API routes"]
+            },
+            "menu-maker-qwenta": {
+                "title": "Menu Maker by Qwenta",
+                "description": [
+                    "A project focused on the early phase of web development.",
+                    "Client needs analysis, technical specs writing, Kanban workflow organization, and task prioritization.",
+                    "It helped me approach scoping and project management before the development phase."
+                ],
+                "tags": [
+                    "Project management",
+                    "Specifications",
+                    "Kanban",
+                    "Tech research"
+                ]
+            },
+            "724events": {
+                "title": "724Events",
+                "description": [
+                    "Analysis and correction of issues on an existing event website.",
+                    "Work focused on bug identification, performance improvements, accessibility, and SEO fixes.",
+                    "This project taught me to work methodically on existing code without unnecessary rewrites."
+                ],
+                "tags": ["React", "Debug", "Testing"]
+            },
+            "nina-carducci": {
+                "title": "Nina Carducci - Photographer",
+                "description": [
+                    "Optimization of an existing website focused on performance and SEO.",
+                    "Work included SEO improvements, image optimization, overall performance, and accessibility.",
+                    "It helped me understand the real impact of technical optimizations on visibility and user experience."
+                ],
+                "tags": ["SEO", "Performance", "Accessibility", "Optimization"]
+            },
+            "mk-gp-experience": {
+                "title": "MK GP Experience",
+                "description": [
+                    "Web app developed to support a live event on Twitch.",
+                    "Dynamic interface, real-time data handling, stream overlays, and complex front-end logic.",
+                    "An experimental project designed for real use with real-world constraints."
+                ],
+                "tags": [
+                    "Vanilla JS",
+                    "Dynamic UI",
+                    "Firebase",
+                    "Real-time DB",
+                    "API key"
+                ]
+            }
+        },
+        "codeSourceLabel": "Source code"
+    },
+    "skills": {
+        "title": "Skills",
+        "intro": [
+            "Click on the boxes to see the skills used in each category."
+        ],
+        "blocks": [
+            {
+                "title": "Turn a mockup into a reliable interface",
+                "items": [
+                    "Semantic HTML",
+                    "Responsive design",
+                    "Sass",
+                    "Accessibility"
+                ]
+            },
+            {
+                "title": "Make an interface dynamic",
+                "items": [
+                    "JavaScript ES6",
+                    "DOM manipulation",
+                    "Event handling",
+                    "REST API calls"
+                ]
+            },
+            {
+                "title": "Structure a front-end application",
+                "items": [
+                    "React (components)",
+                    "Routing",
+                    "Code organization",
+                    "State management"
+                ]
+            },
+            {
+                "title": "Stabilize and improve an existing project",
+                "items": [
+                    "Debugging",
+                    "Optimization",
+                    "Performance",
+                    "SEO",
+                    "Code quality"
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": [
+            "A question, a proposal, or a collaboration?",
+            "I'll get back to you quickly."
+        ],
+        "form": {
+            "subjectLabel": "Subject",
+            "subjectPlaceholder": "Your need",
+            "emailLabel": "Email address",
+            "emailPlaceholder": "Your email",
+            "messageLabel": "Message",
+            "messagePlaceholder": "Feel free to describe your request in detail",
+            "submitLabel": "Send",
+            "consentLabel": "I agree to be contacted about my request"
+        },
+        "submitSuccess": "Your message has been sent",
+        "followTitle": "Follow me"
+    }
+}

@@ -1,13 +1,13 @@
 ﻿import { useState } from 'react';
 import './Projects.scss';
-import content from '../../../i18n/fr.json';
+import { useLanguage } from '../../../context/LanguageContext';
 import realisations from '../../../data/realisations.json';
 import projects from '../../../data/projects.json';
 import ProjectCategoryCard from '../../ui/ProjectCategoryCard/ProjectCategoryCard';
 import ProjectsModal from '../../ui/ProjectsModal/ProjectsModal';
 
-
 export default function Projects() {
+    const { content } = useLanguage();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [activeCategoryId, setActiveCategoryId] = useState(null);
 
@@ -61,15 +61,19 @@ export default function Projects() {
     );
 
     return (
-        <section id='projects' className='app__section projects'>
-            <header className='projects__header'>
-                <h2 id='projects-title' className='projects__title'>
+        <section id="projects" className="app__section projects">
+            <header className="projects__header">
+                <h2 id="projects-title" className="projects__title">
                     {content.projects.title}
                 </h2>
-                <p className='projects__intro'>{content.projects.intro}</p>
+                {content.projects.intro.map((text, index) => (
+                    <p className="projects__intro" key={index}>
+                        {text}
+                    </p>
+                ))}
             </header>
 
-            <div className='projects__grid'>
+            <div className="projects__grid">
                 {categories.map((category) => (
                     <ProjectCategoryCard
                         key={category.id}

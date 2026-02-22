@@ -1,8 +1,9 @@
-import content from '../../../i18n/fr.json';
+import { useLanguage } from '../../../context/LanguageContext';
 import profilePhoto from '../../../assets/images/profile/profile-photo.webp';
 import './Hero.scss';
 
 export default function Hero() {
+    const { content } = useLanguage();
     return (
         <section id="hero" className="app__section">
             <header>

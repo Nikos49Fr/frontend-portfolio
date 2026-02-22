@@ -1,0 +1,51 @@
+@use '../../../styles/variables' as *;
+
+.projects {
+    &__card {
+        margin: 0;
+        height: 100%;
+
+        &-button {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+            height: 100%;
+            background: $color-bg-alt;
+            border: 1px solid $color-border;
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: left;
+            cursor: pointer;
+        }
+        &-body {
+            display: flex;
+            flex: 1 1 0;
+            flex-direction: column;
+        }
+        &-heading {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        &-description {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        &-media {
+            margin: 0;
+            margin-top: auto;
+            width: 100%;
+        }
+        &-image {
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}

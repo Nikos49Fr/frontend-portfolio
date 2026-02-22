@@ -7,8 +7,7 @@
             "Skills",
             "Contact"
         ],
-        "langToggle": "FR|EN",
-        "themeToggle": "Clair|Sombre"
+        "langToggle": "FR|EN"
     },
     "hero": {
         "name": "Nicolas Grignard",
@@ -27,11 +26,14 @@
     },
     "projects": {
         "title": "Mes réalisations",
-        "intro": "Une sélection de projets réalisés dans un cadre de formation et en dehors, classés par thématiques.\nChaque catégorie regroupe plusieurs travaux illustrant des problématiques concrètes, des choix techniques et une progression dans ma pratique.",
+        "intro": [
+            "Une sélection de projets réalisés dans un cadre de formation et en dehors, classés par thématiques.",
+            "Chaque catégorie regroupe plusieurs travaux illustrant des problématiques concrètes, des choix techniques et une progression dans ma pratique."
+        ],
         "categories": {
             "html-css": {
                 "title": "HTML - CSS",
-                "description": "Intégration d’interfaces responsives à partir de maquettes, avec une attention portée à la structure, au rendu visuel et à l’accessibilité.",
+                "description": "Intégration d'interfaces responsives à partir de maquettes, avec une attention portée à la structure, au rendu visuel et à l'accessibilité.",
                 "alt": "Vignette de la catégorie HTML - CSS",
                 "projects": ["ohmyfood", "booki"]
             },
@@ -43,7 +45,7 @@
             },
             "react": {
                 "title": "React",
-                "description": "Applications front-end structurées en composants, gestion des états, routing et organisation du code à l’échelle d’une application.",
+                "description": "Applications front-end structurées en composants, gestion des états, routing et organisation du code à l'échelle d'une application.",
                 "alt": "Vignette de la catégorie React",
                 "projects": ["kasa", "argent-bank"]
             },
@@ -64,18 +66,18 @@
             "ohmyfood": {
                 "title": "Ohmyfood",
                 "description": [
-                    "Intégration complète d’un site vitrine à partir de maquettes fournies.",
-                    "Le projet met l’accent sur la structuration du HTML, l’utilisation de Sass, les animations CSS et l’adaptation à différents formats d’écran.",
-                    "Ce travail m’a permis de consolider de bonnes pratiques d’intégration et d’améliorer la lisibilité du code sur un projet de taille intermédiaire."
+                    "Intégration complète d'un site vitrine à partir de maquettes fournies.",
+                    "Le projet met l'accent sur la structuration du HTML, l'utilisation de Sass, les animations CSS et l'adaptation à différents formats d'écran.",
+                    "Ce travail m'a permis de consolider de bonnes pratiques d'intégration et d'améliorer la lisibilité du code sur un projet de taille intermédiaire."
                 ],
                 "tags": ["Intégration", "Responsive", "Animations CSS", "Sass"]
             },
             "booki": {
                 "title": "Booki",
                 "description": [
-                    "Intégration d’une page web responsive à partir d’une maquette desktop, avec adaptation tablette et mobile.",
-                    "Le projet repose sur une structure HTML sémantique claire et l’utilisation de Flexbox pour la mise en page.",
-                    "Il constitue une base solide pour comprendre les contraintes du responsive design et l’organisation d’une interface simple mais complète."
+                    "Intégration d'une page web responsive à partir d'une maquette desktop, avec adaptation tablette et mobile.",
+                    "Le projet repose sur une structure HTML sémantique claire et l'utilisation de Flexbox pour la mise en page.",
+                    "Il constitue une base solide pour comprendre les contraintes du responsive design et l'organisation d'une interface simple mais complète."
                 ],
                 "tags": ["HTML sémantique", "CSS", "Responsive", "Flexbox"]
             },
@@ -113,7 +115,12 @@
                     "Analyse du besoin client, rédaction de spécifications techniques, organisation du travail via un Kanban et priorisation des tâches.",
                     "Il m'a permis d'aborder les enjeux de cadrage et de gestion de projet avant la phase de développement."
                 ],
-                "tags": ["Gestion de projet", "Spécifications", "Kanban", "Veille techno"]
+                "tags": [
+                    "Gestion de projet",
+                    "Spécifications",
+                    "Kanban",
+                    "Veille techno"
+                ]
             },
             "724events": {
                 "title": "724Events",
@@ -140,17 +147,68 @@
                     "Interface dynamique, gestion de données en temps réel, overlays pour le stream et logique applicative complexe côté front.",
                     "Projet expérimental, conçu pour un usage réel avec des contraintes concrètes."
                 ],
-                "tags": ["JS Vanilla", "UI dynamique", "Firebase", "Real time DB", "clé API"]
+                "tags": [
+                    "JS Vanilla",
+                    "UI dynamique",
+                    "Firebase",
+                    "Real time DB",
+                    "clé API"
+                ]
             }
         },
         "codeSourceLabel": "Code source"
     },
     "skills": {
-        "title": "Skills"
+        "title": "Skills",
+        "intro": [
+            "Cliquez sur les boîtes pour voir les compétences mises en œuvre dans chaque catégorie."
+        ],
+        "blocks": [
+            {
+                "title": "Transformer une maquette en interface fiable",
+                "items": [
+                    "HTML sémantique",
+                    "Responsive design",
+                    "Sass",
+                    "Accessibilité"
+                ]
+            },
+            {
+                "title": "Rendre une interface dynamique",
+                "items": [
+                    "JavaScript ES6",
+                    "Manipulation du DOM",
+                    "Gestion d'événements",
+                    "Appels API REST"
+                ]
+            },
+            {
+                "title": "Structurer une application front-end",
+                "items": [
+                    "React (composants)",
+                    "Routing",
+                    "Organisation du code",
+                    "Gestion des états"
+                ]
+            },
+            {
+                "title": "Fiabiliser et améliorer un projet existant",
+                "items": [
+                    "Débogage",
+                    "Optimisation",
+                    "Performance",
+                    "SEO",
+                    "Qualité du code"
+                ]
+            }
+        ]
     },
     "contact": {
         "title": "Contact",
-        "subtitle": "Une question, une proposition ou une collaboration ?\nJe vous répondrai rapidement.",
+        "subtitle": [
+            "Une question, une proposition ou une collaboration ?",
+            "Je vous répondrai rapidement."
+        ],
         "form": {
             "subjectLabel": "Sujet",
             "subjectPlaceholder": "Votre besoin",
@@ -161,7 +219,7 @@
             "submitLabel": "Envoyer",
             "consentLabel": "J'accepte d'être recontacté concernant ma demande"
         },
-        "followTitle": "Me suivre",
-        "submitSuccess": "Votre message a bien été envoyé"
+        "submitSuccess": "Votre message a bien été envoyé",
+        "followTitle": "Me suivre"
     }
 }

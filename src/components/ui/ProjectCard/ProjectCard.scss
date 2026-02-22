@@ -1,0 +1,77 @@
+﻿@use '../../../styles/variables' as *;
+
+.projects__project {
+    &-card {
+        display: flex;
+        gap: 1.5rem;
+        padding: 1rem 0;
+        border-top: 1px solid $color-border;
+    }
+
+    &-media {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &-image {
+        width: 160px;
+        border-radius: 10px;
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        gap: 0.75rem;
+    }
+
+    &-title {
+        margin-bottom: 0.25rem;
+        font-size: 1.125rem;
+    }
+
+    &-description {
+        font-size: 0.9rem;
+    }
+
+    &-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    &-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    &-tag {
+        padding: 0.25rem 0.5rem;
+        background-color: $color-bg;
+        border: 1px solid $color-border;
+        border-radius: 999px;
+        font-size: 0.85rem;
+
+        &:hover {
+            color: $color-accent-hover;
+        }
+    }
+
+    &-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &-icon {
+            width: 20px;
+            height: 20px;
+            background-color: $color-text;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: contain;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "id": "github",
+        "label": "Github",
+        "url": "https://github.com/Nikos49Fr",
+        "icon": "/src/assets/icons/github-brands-solid-full.svg",
+        "enabled": true
+    },
+    {
+        "id": "linkedin",
+        "label": "Linkedin",
+        "url": "https://www.linkedin.com/in/nicolas4980/",
+        "icon": "/src/assets/icons/linkedin-brands-solid-full.svg",
+        "enabled": true
+    },
+    {
+        "id": "instagram",
+        "label": "Instagram",
+        "url": "https://www.instagram.com/nikos49fr/",
+        "icon": "/src/assets/icons/instagram-brands-solid-full.svg",
+        "enabled": false
+    },
+    {
+        "id": "discord",
+        "label": "Discord",
+        "url": "",
+        "icon": "/src/assets/icons/discord-brands-solid-full.svg",
+        "enabled": false
+    }
+]

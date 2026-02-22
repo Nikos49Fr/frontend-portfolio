@@ -1,23 +1,27 @@
 #hero {
+    margin-top: 72px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 2rem;
-}
 
-#hero > header {
-    flex: 1 1 0;
-}
+    & > header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        flex: 1;
+    }
 
-#hero > figure {
-    margin: 0;
-    flex: 0 0 auto;
-}
+    & > figure {
+        flex: 0 0 200px;
+    }
 
-#hero img {
-    width: 240px;
-    max-width: 100%;
-    height: auto;
+    & img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 1024px) {

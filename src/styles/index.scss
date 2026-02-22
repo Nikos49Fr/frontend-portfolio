@@ -1,13 +1,12 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 @use 'fonts';
 @use 'reset';
 
 :root {
     --font-title: 'Orbitron', system-ui, sans-serif;
     --font-body: 'Inter', system-ui, sans-serif;
-    --font-mono:
-        'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-        'Liberation Mono', monospace;
+    --font-mono: 'IBM Plex Mono', ui-monospace, Consolas;
     --weight-title: 400;
     --weight-body: 300;
 }
@@ -44,7 +43,9 @@ textarea:focus-visible {
 .code-label {
     font-family: var(--font-mono);
     font-weight: 400;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
+
+    @include hover-accent;
 }
 
 .app {
@@ -56,13 +57,14 @@ textarea:focus-visible {
 
 .app__section {
     padding: 50px 30px;
+    border-bottom: solid 1px $color-border;
     // min-height: 100vh;
     // background-image: url("../assets/images/misc/exemple circuit board 4.png");
     // background-attachment: fixed;
-}
-
-.app__section h2 {
-    font-size: 1.5rem;
+    
+    & h2 {
+        font-size: 1.5rem;
+    }
 }
 
 .app__section p {

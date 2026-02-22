@@ -1,35 +1,39 @@
-﻿export default function ProjectCategoryCard({ category, onOpen }) {
+﻿import './ProjectCategoryCard.scss';
+
+export default function ProjectCategoryCard({ category, onOpen }) {
     const handleClick = () => {
         onOpen(category.id);
     };
 
     const iconStyle = {
-        maskImage: `url(${category.icon})`
+        maskImage: `url(${category.icon})`,
     };
 
     return (
-        <article className='projects__card'>
+        <article className="projects__card">
             <button
-                type='button'
-                className='projects__card-button'
+                type="button"
+                className="projects__card-button"
                 onClick={handleClick}
             >
-                <div className='projects__card-body'>
-                    <div className='projects__card-heading'>
+                <div className="projects__card-body">
+                    <div className="projects__card-heading">
                         <span
-                            className={`projects__icon ${category.iconClass}`}
+                            className={`projects__card-icon projects__card-icon--${category.iconClass}`}
                             style={iconStyle}
-                            aria-hidden='true'
+                            aria-hidden="true"
                         />
-                        <h3 className='projects__card-title'>{category.title}</h3>
+                        <h3 className="projects__card-title">
+                            {category.title}
+                        </h3>
                     </div>
-                    <p className='projects__card-description'>
+                    <p className="projects__card-description">
                         {category.description}
                     </p>
                 </div>
-                <figure className='projects__card-media'>
+                <figure className="projects__card-media">
                     <img
-                        className='projects__card-image'
+                        className="projects__card-image"
                         src={category.image}
                         alt={category.alt}
                     />

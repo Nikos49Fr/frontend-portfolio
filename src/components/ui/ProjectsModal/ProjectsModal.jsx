@@ -12,7 +12,6 @@ const getIconStyle = (icon) => ({
 export default function ProjectsModal({
     isOpen,
     category,
-    categories,
     projectsById,
     content,
     onClose,
@@ -36,7 +35,7 @@ export default function ProjectsModal({
                     </button>
                     <div className='projects__modal-heading'>
                         <span
-                            className={`projects__icon ${category.iconClass}`}
+                            className={`projects__card-icon projects__card-icon--${category.iconClass}`}
                             style={getIconStyle(category.icon)}
                             aria-hidden='true'
                         />
