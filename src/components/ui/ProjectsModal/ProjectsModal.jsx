@@ -1,4 +1,5 @@
-﻿import './ProjectsModal.scss';
+import { useEffect } from 'react';
+import './ProjectsModal.scss';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
 const chevronLeft = '/src/assets/icons/chevron-left-solid-full.svg';
@@ -18,6 +19,16 @@ export default function ProjectsModal({
     onPrev,
     onNext
 }) {
+    useEffect(() => {
+        if (!isOpen) {
+            return;
+        }
+        document.body.classList.add('modal-open');
+        return () => {
+            document.body.classList.remove('modal-open');
+        };
+    }, [isOpen]);
+
     if (!isOpen || !category) {
         return null;
     }

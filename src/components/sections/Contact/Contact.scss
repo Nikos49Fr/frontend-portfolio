@@ -13,6 +13,7 @@
         align-items: center;
         gap: 0.5rem;
         max-width: 720px;
+        text-align: center;
     }
 
     &__honeypot {
@@ -180,7 +181,40 @@
 }
 
 @media (max-width: 1024px) {
+    .contact {
+        &__form {
+            max-width: 600px;
+        }
+
+        &__label,
+        &__input,
+        &__textarea,
+        &__consent-label {
+            font-size: 0.9rem;
+        }
+    }
 }
 
 @media (max-width: 768px) {
+    .contact {
+        &__follow-title {
+            font-size: 1.05rem;
+        }
+
+        &__label,
+        &__input,
+        &__textarea,
+        &__consent-label {
+            font-size: 0.85rem;
+        }
+
+        &__input,
+        &__textarea {
+            padding: 0.6rem 0.85rem;
+        }
+
+        &__submit {
+            align-self: center;
+        }
+    }
 }

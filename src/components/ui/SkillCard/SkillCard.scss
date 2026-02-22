@@ -74,3 +74,14 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .skills__card {
+        &-item {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+}

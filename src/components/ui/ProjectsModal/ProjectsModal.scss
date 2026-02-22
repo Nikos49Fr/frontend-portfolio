@@ -26,6 +26,8 @@
         grid-template-columns: 1fr 1fr 1fr auto;
         align-items: center;
         gap: 1rem;
+        border-bottom: 1px solid $color-border;
+        padding-bottom: 1rem;
     }
 
     &-nav {
@@ -76,5 +78,73 @@
         // gap: 1.5rem;
         overflow-y: auto;
         padding-right: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects__modal {
+        &-header {
+            grid-template-columns: 1fr 2fr 1fr auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .projects__modal {
+        &-content {
+            padding: 1rem;
+            position: relative;
+        }
+
+        &-header {
+            grid-template-columns: 1fr auto;
+            gap: 0.5rem;
+        }
+
+        &-chevron-icon {
+            width: 20px;
+            height: 40px;
+        }
+
+        &-heading {
+            gap: 0.5rem;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            justify-content: center;
+        }
+
+        &-title {
+            font-size: 1rem;
+        }
+
+        &-close {
+            position: relative;
+            z-index: 1;
+            justify-self: end;
+
+            &-icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.6;
+            padding: 0.5rem;
+            background: rgba($color-bg, 0.6);
+            border-radius: 999px;
+
+            &--prev {
+                left: -12px;
+            }
+
+            &--next {
+                right: -12px;
+            }
+        }
     }
 }

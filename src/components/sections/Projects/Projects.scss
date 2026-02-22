@@ -53,7 +53,31 @@
 }
 
 @media (max-width: 1024px) {
+    .projects {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__card-icon {
+            width: 26px;
+            height: 26px;
+            min-width: 26px;
+            min-height: 26px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
+    .projects {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+
+        &__card-icon {
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
+            min-height: 22px;
+        }
+    }
 }

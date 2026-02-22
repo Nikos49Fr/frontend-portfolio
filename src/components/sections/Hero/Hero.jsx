@@ -7,8 +7,8 @@ export default function Hero() {
     return (
         <section id="hero" className="app__section">
             <header>
-                <h1 id="hero-title">{content.hero.name}</h1>
-                <h2>{content.hero.title}</h2>
+                <h1 id="hero-title" className="hero__name">{content.hero.name}</h1>
+                <h2 className="hero__title">{content.hero.title}</h2>
                 {content.hero.intro.map((text, index) => (
                     <p key={index}>{text}</p>
                 ))}

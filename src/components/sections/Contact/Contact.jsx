@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import './Contact.scss';
 import { useLanguage } from '../../../context/LanguageContext';
 import socialLinks from '../../../data/socialLinks.json';
@@ -77,6 +77,16 @@ export default function Contact() {
     const visibleFollowItems = socialLinks.filter(
         (item) => item.enabled && item.url,
     );
+
+    useEffect(() => {
+        if (!showSuccess) {
+            return;
+        }
+        document.body.classList.add('modal-open');
+        return () => {
+            document.body.classList.remove('modal-open');
+        };
+    }, [showSuccess]);
 
     return (
         <section id="contact" className="app__section contact">

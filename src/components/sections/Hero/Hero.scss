@@ -25,7 +25,24 @@
 }
 
 @media (max-width: 1024px) {
+    #hero {
+        & > figure {
+            flex: 0 0 180px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+
+        & > figure {
+            width: 160px;
+            margin: 0 auto;
+        }
+    }
+
+    .hero__name {
+        font-size: 1.8rem;
+    }
 }

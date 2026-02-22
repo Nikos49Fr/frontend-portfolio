@@ -21,7 +21,18 @@
 }
 
 @media (max-width: 1024px) {
+    .approach {
+        &__icon {
+            width: 140px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
+    .approach {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
