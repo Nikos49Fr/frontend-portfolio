@@ -15,6 +15,7 @@ export default function ProjectCard({ project, projectText, codeSourceLabel }) {
     const tags = projectText.tags ?? [];
     const paragraphs = projectText.description ?? [];
     const imageSrc = resolveJsonAsset(project.image);
+    const imageAlt = projectText.alt ?? '';
 
     return (
         <article className="projects__project-card">
@@ -23,7 +24,7 @@ export default function ProjectCard({ project, projectText, codeSourceLabel }) {
                     <img
                         className="projects__project-image"
                         src={imageSrc}
-                        alt=""
+                        alt={imageAlt}
                     />
                 </figure>
             ) : null}

@@ -1,4 +1,4 @@
-{
+﻿{
     "seo": {
         "title": "Nicolas Grignard | Développeur front-end",
         "description": "Portfolio de Nicolas Grignard, développeur front-end. Projets, compétences, approche et contact."
@@ -68,6 +68,7 @@
         "cards": {
             "ohmyfood": {
                 "title": "Ohmyfood",
+                "alt": "Vignette du projet Ohmyfood",
                 "description": [
                     "Intégration complète d'un site vitrine à partir de maquettes fournies.",
                     "Le projet met l'accent sur la structuration du HTML, l'utilisation de Sass, les animations CSS et l'adaptation à différents formats d'écran.",
@@ -77,6 +78,7 @@
             },
             "booki": {
                 "title": "Booki",
+                "alt": "Vignette du projet Booki",
                 "description": [
                     "Intégration d'une page web responsive à partir d'une maquette desktop, avec adaptation tablette et mobile.",
                     "Le projet repose sur une structure HTML sémantique claire et l'utilisation de Flexbox pour la mise en page.",
@@ -86,6 +88,7 @@
             },
             "sophie-bluel": {
                 "title": "Sophie Bluel - Architecte d'intérieur",
+                "alt": "Vignette du projet Sophie Bluel - Architecte d'intérieur",
                 "description": [
                     "Développement d'une interface web dynamique en JavaScript natif.",
                     "Le projet repose sur la manipulation du DOM, la gestion des interactions utilisateurs et la communication avec une API pour afficher et modifier des données.",
@@ -95,6 +98,7 @@
             },
             "kasa": {
                 "title": "Kasa",
+                "alt": "Vignette du projet Kasa",
                 "description": [
                     "Développement d'une application front-end avec React à partir de maquettes et de données fournies.",
                     "Le projet met en œuvre une architecture par composants, la gestion des états, le routing et l'organisation du code à l'échelle d'une application complète.",
@@ -104,6 +108,7 @@
             },
             "argent-bank": {
                 "title": "Argent Bank",
+                "alt": "Vignette du projet Argent Bank",
                 "description": [
                     "Développement d'une application front-end bancaire avec React et Redux.",
                     "Mise en place d'une gestion globale de l'état, sécurisation des accès et communication avec une API.",
@@ -113,6 +118,7 @@
             },
             "menu-maker-qwenta": {
                 "title": "Menu Maker by Qwenta",
+                "alt": "Vignette du projet Menu Maker by Qwenta",
                 "description": [
                     "Projet centré sur la phase amont d'un développement web.",
                     "Analyse du besoin client, rédaction de spécifications techniques, organisation du travail via un Kanban et priorisation des tâches.",
@@ -127,6 +133,7 @@
             },
             "724events": {
                 "title": "724Events",
+                "alt": "Vignette du projet 724Events",
                 "description": [
                     "Analyse et correction de dysfonctionnements sur un site événementiel existant.",
                     "Le travail a porté sur l'identification des bugs, l'amélioration des performances, l'accessibilité et la correction de problèmes SEO.",
@@ -136,6 +143,7 @@
             },
             "nina-carducci": {
                 "title": "Nina Carducci - Photographe",
+                "alt": "Vignette du projet Nina Carducci - Photographe",
                 "description": [
                     "Optimisation d'un site web existant orientée performance et référencement.",
                     "Le travail a porté sur l'amélioration du SEO, l'optimisation des images, la performance globale et l'accessibilité.",
@@ -145,6 +153,7 @@
             },
             "mk-gp-experience": {
                 "title": "MK GP Experience",
+                "alt": "Vignette du projet MK GP Experience",
                 "description": [
                     "Application web développée pour accompagner un événement en live sur Twitch.",
                     "Interface dynamique, gestion de données en temps réel, overlays pour le stream et logique applicative complexe côté front.",
@@ -227,3 +236,4 @@
         "submitSuccess": "Votre message a bien été envoyé"
     }
 }
+

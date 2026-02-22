@@ -1,4 +1,4 @@
-{
+﻿{
     "seo": {
         "title": "Nicolas Grignard | Front-end developer",
         "description": "Portfolio of Nicolas Grignard, front-end developer. Projects, skills, approach, and contact."
@@ -68,6 +68,7 @@
         "cards": {
             "ohmyfood": {
                 "title": "Ohmyfood",
+                "alt": "Project thumbnail for Ohmyfood",
                 "description": [
                     "Full integration of a showcase site from provided mockups.",
                     "The project focuses on HTML structure, Sass usage, CSS animations, and adaptation to different screen sizes.",
@@ -77,6 +78,7 @@
             },
             "booki": {
                 "title": "Booki",
+                "alt": "Project thumbnail for Booki",
                 "description": [
                     "Integration of a responsive web page from a desktop mockup, with tablet and mobile adaptation.",
                     "The project relies on a clear semantic HTML structure and Flexbox for layout.",
@@ -86,6 +88,7 @@
             },
             "sophie-bluel": {
                 "title": "Sophie Bluel - Interior Designer",
+                "alt": "Project thumbnail for Sophie Bluel - Interior Designer",
                 "description": [
                     "Development of a dynamic web interface in vanilla JavaScript.",
                     "The project focuses on DOM manipulation, user interaction handling, and API communication to display and update data.",
@@ -95,6 +98,7 @@
             },
             "kasa": {
                 "title": "Kasa",
+                "alt": "Project thumbnail for Kasa",
                 "description": [
                     "Development of a React front-end application based on mockups and provided data.",
                     "The project implements component architecture, state management, routing, and code organization at app scale.",
@@ -104,6 +108,7 @@
             },
             "argent-bank": {
                 "title": "Argent Bank",
+                "alt": "Project thumbnail for Argent Bank",
                 "description": [
                     "Development of a front-end banking app with React and Redux.",
                     "Global state management, access security, and API communication.",
@@ -113,6 +118,7 @@
             },
             "menu-maker-qwenta": {
                 "title": "Menu Maker by Qwenta",
+                "alt": "Project thumbnail for Menu Maker by Qwenta",
                 "description": [
                     "A project focused on the early phase of web development.",
                     "Client needs analysis, technical specs writing, Kanban workflow organization, and task prioritization.",
@@ -127,6 +133,7 @@
             },
             "724events": {
                 "title": "724Events",
+                "alt": "Project thumbnail for 724Events",
                 "description": [
                     "Analysis and correction of issues on an existing event website.",
                     "Work focused on bug identification, performance improvements, accessibility, and SEO fixes.",
@@ -136,6 +143,7 @@
             },
             "nina-carducci": {
                 "title": "Nina Carducci - Photographer",
+                "alt": "Project thumbnail for Nina Carducci - Photographer",
                 "description": [
                     "Optimization of an existing website focused on performance and SEO.",
                     "Work included SEO improvements, image optimization, overall performance, and accessibility.",
@@ -145,6 +153,7 @@
             },
             "mk-gp-experience": {
                 "title": "MK GP Experience",
+                "alt": "Project thumbnail for MK GP Experience",
                 "description": [
                     "Web app developed to support a live event on Twitch.",
                     "Dynamic interface, real-time data handling, stream overlays, and complex front-end logic.",
@@ -227,3 +236,4 @@
         "followTitle": "Follow me"
     }
 }
+
