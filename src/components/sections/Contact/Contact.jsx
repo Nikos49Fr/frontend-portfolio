@@ -1,14 +1,14 @@
-import { useEffect, useMemo, useState } from 'react';
-import { useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import './Contact.scss';
 import { useLanguage } from '../../../context/LanguageContext';
 import socialLinks from '../../../data/socialLinks.json';
 
-const paperPlaneIcon = '/src/assets/icons/paper-plane-solid-full.svg';
-const closeIcon = '/src/assets/icons/xmark-solid-full.svg';
+import paperPlaneIcon from '../../../assets/icons/paper-plane-solid-full.svg';
+import closeIcon from '../../../assets/icons/xmark-solid-full.svg';
 
 const getIconStyle = (icon) => ({
-    maskImage: `url(${icon})`,
+    maskImage: `url("${icon}")`,
+    WebkitMaskImage: `url("${icon}")`,
 });
 
 export default function Contact() {

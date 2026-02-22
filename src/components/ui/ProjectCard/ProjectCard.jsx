@@ -1,8 +1,9 @@
 ﻿import './ProjectCard.scss';
-const githubIcon = '/src/assets/icons/github-brands-solid-full.svg';
+import githubIcon from '../../../assets/icons/github-brands-solid-full.svg';
 
 const getIconStyle = (icon) => ({
-    maskImage: `url(${icon})`,
+    maskImage: `url("${icon}")`,
+    WebkitMaskImage: `url("${icon}")`,
 });
 
 export default function ProjectCard({ project, projectText, codeSourceLabel }) {

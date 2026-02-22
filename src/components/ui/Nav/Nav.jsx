@@ -1,14 +1,15 @@
 import './Nav.scss';
 import { useLanguage } from '../../../context/LanguageContext';
 
-const homeIcon = '/src/assets/icons/house-solid-full.svg';
-const compassIcon = '/src/assets/icons/compass-solid-full.svg';
-const folderIcon = '/src/assets/icons/folder-open-solid-full.svg';
-const wrenchIcon = '/src/assets/icons/wrench-solid-full.svg';
-const envelopeIcon = '/src/assets/icons/envelope-solid-full.svg';
+import homeIcon from '../../../assets/icons/house-solid-full.svg';
+import compassIcon from '../../../assets/icons/compass-solid-full.svg';
+import folderIcon from '../../../assets/icons/folder-open-solid-full.svg';
+import wrenchIcon from '../../../assets/icons/wrench-solid-full.svg';
+import envelopeIcon from '../../../assets/icons/envelope-solid-full.svg';
 
 const getIconStyle = (icon) => ({
-    maskImage: `url(${icon})`
+    maskImage: `url("${icon}")`,
+    WebkitMaskImage: `url("${icon}")`,
 });
 
 export default function Nav() {

@@ -1,13 +1,13 @@
 import { useEffect, useRef } from 'react';
 import './ProjectsModal.scss';
 import ProjectCard from '../ProjectCard/ProjectCard';
-
-const chevronLeft = '/src/assets/icons/chevron-left-solid-full.svg';
-const chevronRight = '/src/assets/icons/chevron-right-solid-full.svg';
-const closeIcon = '/src/assets/icons/xmark-solid-full.svg';
+import chevronLeft from '../../../assets/icons/chevron-left-solid-full.svg';
+import chevronRight from '../../../assets/icons/chevron-right-solid-full.svg';
+import closeIcon from '../../../assets/icons/xmark-solid-full.svg';
 
 const getIconStyle = (icon) => ({
-    maskImage: `url(${icon})`
+    maskImage: `url("${icon}")`,
+    WebkitMaskImage: `url("${icon}")`,
 });
 
 export default function ProjectsModal({
